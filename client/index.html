@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>game on</title>
+    <link href = "./ui/PageStyle.css" type="text/css" rel = "stylesheet"/>
+  </head>
+
+  <body id="playPage">
+    
+    <div class="active" id='menu'>WELCOME
+      <button id="btnNewGame">new game</button> 
+      <button id="btnJoinGame">join game</button> 
+    </div>
+
+    <div class="active" id="overlay">
+    </div>
+
+    <audio id="BGM" src="ui/audio/activation.mp3" preload="auto"  controls="controls"  loop="true" hidden="true"></audio>  
+
+    <div id="Win">
+       <p>YOU WON</p>   
+    </div>
+
+    <div id="Lose">
+      <p>YOU LOST</p>    
+   </div>
+
+   <div id="Left">
+    <p>HE LEFT.....</p>
+    <button id='newRound'>it's fine.. NEXT!!</button>
+   </div>
+
+   <div id="timeout">
+    <p>ach, time out</p>
+    <button id='homepage'>new round</button>
+
+   </div>
+
+   <button id="btnQuit">Quit</button> 
+   <button id="btnMute">Mute</button> 
+   
+    <div>
+    <canvas id="myCanvas" width="640" height="480"></canvas> 
+    </div>
+
+    <div id='bars'>
+      <div>U</div>
+      <progress id="health1" value="100" max="100"></progress> 
+      <div>UR BRO</div> 
+      <progress id="health2" value="100" max="100"></progress> 
+    </div>
+
+    <div id="join">
+      <h2>HEY BRO</h2>
+      <p>tell me your game ID:</p>
+      <p>      
+      <input id="idInput" name="Game ID" type="text">
+      </p>
+      <p>     
+      <button id='joinConfirm'>LET'S GO</button>
+      </p>
+  </div>
+
+    <div id="confirmMsg">
+      <h1>you sure?</h1>
+      <form >
+      <input type="button" id="noquit" value="hmmm..">
+      <input type="submit" value="I AM LEAVING">
+      </form>
+    </div>
+
+    <p id="id2share"></p>
+
+    <script type="module" src="ui/ui.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

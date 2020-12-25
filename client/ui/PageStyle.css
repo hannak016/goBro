@@ -1,0 +1,315 @@
+*{
+    font-family: fantasy, sans-serif,Arial, Helvetica;
+}
+
+#playPage{
+    display: table;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;   
+    background-image: url("pics/background.png");
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    background-position-x: center;
+    background-size: 640px 450px; 
+} 
+
+
+
+#btnNewGame{
+    padding: 5px 300px; 
+   background-color:#839cb877;
+   border-radius: 50px;
+   margin-top: 20px;
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+   transition: ease-in;
+   position: fixed;
+   top:30%;
+   left:10%;
+    max-width: 80%;
+    border:5px  dotted black;
+    
+   
+}
+#btnNewGame:hover{
+    transform: translate(0em,-0.1em);
+    background-color: white;  
+    background-size: 550px;
+    color: rgb(211, 140, 32);
+}
+
+
+#btnJoinGame{
+   padding: 5px 300px; 
+   background-color: #839cb877 ;
+   border-radius: 50px;
+   margin-top: 40px;
+   border:5px  dotted black;
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+   transition: ease-in;
+   position: fixed;
+   top:50%;
+   left:10%;
+   max-width: 80%;
+   
+}
+#btnJoinGame:hover{
+    transform: translate(0em,-0.1em);
+    background-color: white; 
+    background-size: 550px;
+    color: rgb(211, 140, 32);
+}
+
+#btnQuit{
+    position: relative;
+    left:650px;
+    top:50px;
+    padding: 0.3em 0.3em;
+    background-color: #aba994;
+    border-radius: 5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    transition: ease-in;
+    
+}
+#btnQuit:hover{
+    transform: translate(0em,-0.005em);
+    background-color:rgb(222, 96, 96);
+}
+
+#menu{
+    max-width: 80%;
+    height: 600px;
+    width: 1000px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border:5px  solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-repeat: repeat;
+    background-size: contain;
+    font-size: 100px;
+    font-weight: bold;
+    font-display: block;
+    color: #0c0c0c8c;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 200px;
+
+     
+}
+
+#menu.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+#btnMute{
+    position: relative;
+    left:600px;
+    top:100px;
+    padding: 0.3em 0.3em;
+    background-color: #aba994;
+    border-radius: 5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    transition: ease-in;
+    
+}
+#btnMute:hover{
+    transform: translate(0em,-0.005em);
+    background-color:rgb(222, 96, 96);
+}
+
+
+#newRound{
+        position: relative;
+        display: block;
+        width: 90px;
+        height:90px; 
+        bottom: 30px;
+        left: 300px;   
+        background-color: #bdbdbdbb;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: ease-in;
+        opacity: 0.8; 
+        text-align: center;
+
+}
+
+#newRound:hover{
+    transform: translate(0em,-0.005em);
+    background-color:rgb(140, 174, 102);
+}
+#Win{
+    display:none;
+    z-index: 20;
+    background-image: url("pics/sun.jpg");
+    background-size: contain;
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    padding: 20px;
+    top: 25px;
+    opacity: 0.8;
+    font-size: 100px;
+    font-weight: bold;
+    font-display: block;
+    color: #eba120;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 376px;
+  }
+
+
+#Lose{
+    display:none;
+    z-index: 20;
+    background-color: #070707;
+    background-image: url("pics/flash.jpg");
+    background-size: contain;
+    height: 400px;
+    width: 600px;
+    top: 25px;
+    position: fixed;
+    padding: 20px;  
+    opacity: 0.8;
+    font-size: 100px;
+    font-weight: bold;
+    font-display: block;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 376px;
+}
+
+#Left{
+    display:none;
+    z-index: 25;
+    height: 350px;; 
+    width: 640px;
+    position: fixed; 
+    margin-top: 5%; 
+    opacity: 1;
+    background-color: black;  
+    font-size: 100px;
+    font-weight: bold;
+    font-display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 1px;
+}
+#timeout{
+    
+    display:none;
+    z-index: 25;
+    height: 600px;; 
+    width: 800px;
+    border-radius: 20px;
+    border:5px  solid rgb(211, 157, 157);
+    position: fixed; 
+    margin-top: 3%; 
+    opacity: 1;
+    background-color: rgb(184, 95, 95);  
+    font-size: 100px;
+    font-weight: bold;
+    font-display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 200px;
+}
+#homepage{
+    position: relative;
+    display: block;
+    width: 90px;
+    height:90px; 
+    bottom: 100px;
+    left: 380px;   
+    background-color: #bdbdbdbb;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: ease-in;
+    opacity: 0.8; 
+    text-align: center;
+
+}
+
+#homepage:hover{
+transform: translate(0em,-0.005em);
+background-color:rgb(174, 121, 102);
+}
+
+
+#confirmMsg{
+    display:none;
+    z-index: 20;
+    background-color: rgb(250, 250, 250);
+    height: 300px;
+    width: 400px;
+    position: relative;  
+    bottom: 450px;
+    left:150px;
+    border: 3px solid black ;
+    border-radius: 20px ;
+    font-size: 20px;
+    font-weight: bold;
+    color: #211c13;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    line-height: 100px;
+}
+
+#bars{
+    position: relative;
+}
+
+#join{
+    display:none;
+    z-index: 20;
+    background-color: rgb(250, 250, 250);
+    height: 300px;
+    width: 400px;
+    position: relative;
+    bottom: 450px;
+    left:150px;
+    border: 3px solid black ;
+    border-radius: 20px ;
+    font-size: 20px;
+    font-weight: bold;
+    color: #211c13;
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+}
+
