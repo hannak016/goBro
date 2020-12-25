@@ -21,6 +21,6 @@ The sun timer would begin to fall down after both players' entrance. The game te
  - Key D/F: Attack
 
  ## demo
-![Aaron Swartz](https://github.com/hannak016/game-goBro/blob/main/demo/demo3%20game.jpg)
-![Aaron Swartz](https://github.com/hannak016/game-goBro/blob/main/demo/demo2%20game.jpg)
-![Aaron Swartz](https://github.com/hannak016/game-goBro/blob/main/demo/demo1%20game.jpg)
+![Aaron Swartz](https://github.com/hannak016/goBro/blob/main/demo/demo3%20game.jpg)
+![Aaron Swartz](https://github.com/hannak016/goBro/blob/main/demo/demo2%20game.jpg)
+![Aaron Swartz](https://github.com/hannak016/goBro/blob/main/demo/demo1%20game.jpg)
